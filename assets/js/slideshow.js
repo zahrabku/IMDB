@@ -18,9 +18,13 @@ function showSlide(n) {
         imageIndex = slides.length
     };
     for (let i = 0; i < slides.length; i++) {
+        slides[i].style.width = '0vw';
         slides[i].style.display = 'none';
+        
     };
+    slides[imageIndex - 1].style.width = '57vw';
     slides[imageIndex - 1].style.display = 'flex';
+    
 
 }
 document.querySelector('.next').onclick = ()=>{moveSlides(1)};
