@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(0, 0, 0);
+    padding: 0px 100px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    color: white;
+    grid-gap: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    border-radius: 5px;
+    top: 30%;
+    width: 50px;
+    height: 65px;
+    border-style: none;
+    border: 1px solid white;
+    background-color: black;
+    opacity: 0.5;
+}
+
+i {
+    color: white;
+}
+
+.prev:hover i {
+    color: rgb(230, 185, 30);
+    transition: 0.15s ease-in;
+}
+
+.next:hover i {
+    color: rgb(230, 185, 30);
+    transition: 0.15s ease-in;
+}
+
+
+.next {
+    right: 0;
+}
+
+.slide {
+    /* display: none; */
+    width: 57vw;
+    height: 72vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6));
+}
+
+
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    width: 165px;
+
+
+
+}
+
+.thumbnail-poster {
+    width: 100%;
+    height: 250px;
+}
+
+.poster-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    color: black;
+}
+
+.poster-icon:hover {
+    color: rgb(99, 99, 99);
+    transition: 0.2s ease-in-out;
+}
+
+.plus-icon {
+    position: absolute;
+    top: 19px;
+    left: 16px;
+    opacity: 1;
+    color: white;
+}
+
+/* .poster-icon:hover ~ .plus-icon{
+    color: rgb(99, 99, 99);
+    transition: 0.2s ease-in-out;
+} */
+
+.slideshow-playcontrol {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 190px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.playcontrol-def{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.play-button {
+    border-style: none;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.slideshow-playcontrol:hover  .play-button{
+    color: rgb(230, 185, 30);
+    transition: 0.2 ease-in;
+}
+
+.playcontrol-title{
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    /* gap: 10px; */
+}
+
+.playcontrol-head{
+    font-size: 34px;
+    letter-spacing: 1.5px;
+    
+}
+
+.playcontrol-time{
+    color: rgb(179,179,179);
+    font-size: 21px;
+    /* padding-right: 15px; */
+}
+
+.playcontrol-des{
+    color: rgb(179,179,179);
+    font-size: 21px;
+    padding-top: 3px;
+}
+
+.slide-shadow{
+    background: linear-gradient(to top,rgb(0,0,0),rgb(0,0,0,0),rgb(0,0,0,0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
