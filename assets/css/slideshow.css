@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(0, 0, 0);
+    padding: 0px 100px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    color: white;
+    grid-gap: 15px;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    border-radius: 5px;
+    top: 30%;
+    width: 50px;
+    height: 65px;
+    border-style: none;
+    border: 1px solid white;
+    background-color: rgb(147, 147, 147);
+    opacity: 50%;
+}
+
+i {
+    color: white;
+}
+
+.prev:hover i {
+    color: rgb(230, 185, 30);
+    transition: 0.15s ease-in;
+}
+
+.next:hover i {
+    color: rgb(230, 185, 30);
+    transition: 0.15s ease-in;
+}
+
+
+.next {
+    right: 0;
+}
+
+.slide {
+    /* display: none; */
+    width: 57vw;
+    height: 72vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.6))
+}
+
+
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
