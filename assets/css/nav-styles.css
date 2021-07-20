@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0px;
-    font-size: 14px;
+    /* font-size: 14px; */
     /* background-color: hsl(0,0%,0%); */
     
 }
@@ -9,6 +9,9 @@
 
 body{
     margin: 0px;
+    width: 86%;
+    margin: auto;
+    /* max-width: 1024; */
 }
 
 .navbar{
@@ -21,6 +24,7 @@ body{
     width: 100%;
 
 }
+
 
 .imdblogo{
     width: 75px;
@@ -86,7 +90,7 @@ body{
 
 .searchbar{
     display: flex;
-    width: 800px;
+    width: 500px;
 }
 
 .searchbar:focus-within{
@@ -187,5 +191,44 @@ body{
 
 .signin-button:hover{
     background-color:rgb(50,50,50) ;
+}
+
+.sidemenue-button{
+    display: none;
+    outline: none;
+    border-style: none;
+    background-color: black;
+}
+
+
+@media screen and (max-width:1024px){
+
+    .menu-button{
+        display: none;
+    }
+
+    .imdbpro-button{
+        display: none;
+    }
+
+    .watchlist-button{
+        display: none;
+    }
+
+    .sidemenue-button{
+        display: inline;
+    }
+
+    body{
+        margin: 0px;
+        width: 98%;
+        margin: auto;
+    }
+
+    
+}
+
+@media screen and (max-width:600px){
+    
 }
 

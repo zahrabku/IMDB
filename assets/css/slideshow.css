@@ -1,18 +1,28 @@
+.hide{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+
+
 body {
     background-color: rgb(0, 0, 0);
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
 }
 
 .grid1 {
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 2fr 1fr;
     color: white;
     grid-gap: 20px;
 }
 
 .slideshow-container {
+    display: flex;
     position: relative;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 
@@ -53,8 +63,8 @@ i {
 
 .slide {
     /* display: none; */
-    width: 57vw;
-    height: 72vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -121,7 +131,7 @@ i {
     align-items: flex-start;
 }
 
-.playcontrol-def{
+.playcontrol-def {
     display: flex;
     flex-direction: column;
     line-height: 40px;
@@ -135,38 +145,38 @@ i {
     color: white;
 }
 
-.slideshow-playcontrol:hover  .play-button{
+.slideshow-playcontrol:hover .play-button {
     color: rgb(230, 185, 30);
     transition: 0.2 ease-in;
 }
 
-.playcontrol-title{
+.playcontrol-title {
     display: flex;
     align-items: flex-end;
     text-align: left;
     /* gap: 10px; */
 }
 
-.playcontrol-head{
+.playcontrol-head {
     font-size: 34px;
     letter-spacing: 1.5px;
-    
+
 }
 
-.playcontrol-time{
-    color: rgb(179,179,179);
+.playcontrol-time {
+    color: rgb(179, 179, 179);
     font-size: 21px;
     /* padding-right: 15px; */
 }
 
-.playcontrol-des{
-    color: rgb(179,179,179);
+.playcontrol-des {
+    color: rgb(179, 179, 179);
     font-size: 21px;
     padding-top: 3px;
 }
 
-.slide-shadow{
-    background: linear-gradient(to top,rgb(0,0,0),rgb(0,0,0,0),rgb(0,0,0,0));
+.slide-shadow {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0, 0), rgb(0, 0, 0, 0));
     position: absolute;
     top: 0;
     left: 0;
@@ -175,3 +185,15 @@ i {
 }
 
 
+
+
+@media screen and (max-width:1024px) {
+
+    .grid1 {
+        grid-template-columns: 100%;
+    }
+
+    .upnext-upperpart{
+        display: none;
+    }
+}
