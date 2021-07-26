@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     margin: 0px;
-    
 }
 
 
@@ -221,14 +220,10 @@ body{
         width: 98%;
         margin: auto;
     }
-
-
-
     
 }
 
 @media screen and (max-width:600px){
-
 
     
 }
