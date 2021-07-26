@@ -106,7 +106,26 @@
     width: 100%;
     background-color: rgb(26,26,26);
     border-radius: 3px;
+    position: relative;
 }
+
+/* .wtw-slider-item > i{
+    position: absolute;
+    top:0;
+    left: 0;
+    color: black;
+    opacity: 50%;
+} */
+
+.plus-icon-sm{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    opacity: 1;
+    color: white;
+}
+
+
 
 .wtw-i-img{
     width: 100%;

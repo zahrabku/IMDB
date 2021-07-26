@@ -1,0 +1,44 @@
+.landpage-footer{
+    height: 30vh;
+    padding: 10px 150px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.social-media-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-media-icon-container i{
+    margin: 0px 20px 30px 20px;
+    cursor: pointer;
+}
+
+.social-media-icon-container button{
+    background-color: black;
+    
+}
+
+.footer-links{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links div{
+    margin: 10px 0px;
+}
+
+.footer-links div a{
+    margin: 0px 10px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.footer-links div a:hover{
+    text-decoration: underline;
+}
