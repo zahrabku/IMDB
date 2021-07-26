@@ -1,9 +1,6 @@
 *{
     box-sizing: border-box;
     margin: 0px;
-    /* font-size: 14px; */
-    /* background-color: hsl(0,0%,0%); */
-    
 }
 
 
@@ -11,7 +8,7 @@ body{
     margin: 0px;
     width: 86%;
     margin: auto;
-    /* max-width: 1024; */
+    height: 100%;
 }
 
 .navbar{
@@ -22,7 +19,6 @@ body{
     align-items: center;
     color:hsl(0,0%,95%); 
     width: 100%;
-
 }
 
 
@@ -224,11 +220,11 @@ body{
         width: 98%;
         margin: auto;
     }
-
     
 }
 
 @media screen and (max-width:600px){
+
     
 }
 

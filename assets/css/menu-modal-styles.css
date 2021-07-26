@@ -1,14 +1,16 @@
 .modal {
+    display: none;
+    width: 100%;
+    height: 100%;
     /* display: none; */
-    width: 100vw;
-    height: 0vh;
     background-color: rgb(31, 31, 31);
     position: absolute;
     left: 0;
     top: 0;
     font-family: 'Roboto', sans-serif;
-    overflow-y: hidden;
-    transition: 0.5s;
+    transition: 1s;
+    animation-name: menu_modal;
+    animation-duration: 0.5s;
 }
 
 .modal-container {
@@ -75,4 +77,79 @@ ul>a {
 
 .tvshows {
     margin-bottom: 40px;
+}
+
+@keyframes menu_modal{
+    0%{top: -100%;}
+    100%{
+        top: 0;
+    }
+}
+
+
+
+@media screen and (max-width:1024px){
+
+    .modal{
+        display: none;
+        width: 310px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+        animation-name: side_menu_modal;
+        animation-duration: 0.5s;
+        
+    }
+
+    .modal-container{
+        padding: 20px;
+        height: 100%;
+    }
+
+    .modal_header{
+        border-bottom: 1px solid gray;
+    }
+
+    .imdblogo-modal{
+        display: none;
+    }
+
+    .modal-close {
+        background-color: rgb(31, 31, 31);
+        color: white;
+    }
+
+
+    .modal-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-content-items{
+        display: none;
+    }
+
+    .modal-content-head>*:first-child {
+        color: rgb(141, 141, 141);
+    }
+
+    .modal-title{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .tvshows{
+        margin-bottom: 0px;
+    }
+
+
+}
+
+@keyframes side_menu_modal{
+    0%{left: -100%;}
+    100%{
+        left: 0;
+    }
 }

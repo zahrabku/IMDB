@@ -15,316 +15,840 @@
     <link rel="stylesheet" href="./assets/css/slideshow.css">
     <link rel="stylesheet" href="./assets/css/upnext-styles.css">
     <link rel="stylesheet" href="./assets/css/featureToday-slideshow.css">
+    <link rel="stylesheet" href="./assets/css/what-to-watch-styles.css">
 
 
 </head>
 
 <body>
-
-    <!-- navbar -->
-    <nav class="navbar">
-        <button class="sidemenue-button">
-            <i class="fa fa-bars fa-lg"></i>
-        </button>
-        <div class="logo">
-            <img class="imdblogo" src="./assets/images/MV5BMTk3ODA4Mjc0NF5BMl5BcG5nXkFtZTgwNDc1MzQ2OTE@._V1_.png">
-        </div>
-        <button class="menu-button">
-            <i class="fa fa-bars"></i>
-            <div class="menu">Menu</div>
-        </button>
-
-        <div class="searchbar">
-            <div class="combobox">
-                <button class="combobutton">All <i class="fas fa-caret-down" style="color: black;"></i></button>
-
-            </div>
-            <!-- <div class="searchinput-container"> -->
-            <input class="search-input" placeholder="Search IMDb">
-            <!-- </div> -->
-
-            <button class="searchbutton" type="submit">
-                <i class="fas fa-search"></i>
+  
+    <div class="container">
+        <!-- navbar -->
+        <nav class="navbar">
+            <button class="sidemenue-button">
+                <i class="fa fa-bars fa-lg"></i>
             </button>
-        </div>
-        <button class="imdbpro-button">
-            <div class="imdbpro">IMDbPro</div>
-        </button>
-        <div class="vertical-line"></div>
-        <button class="watchlist-button">
-            <i class="far fa-bookmark"></i>
-            <div class="watchlist">Watchlist</div>
-        </button>
-        <button class="signin-button">
-            <div class="signin">Sign In</div>
-        </button>
-    </nav>
-
-
-
-    <!-- slideshow & up next -->
-    <div class="grid1">
-        <div class="slideshow-container">
-            <div class="slide">
-                <div class="slide-shadow"></div>
-                <div class="poster">
-                    <i class="poster-icon fas fa-bookmark fa-4x"></i>
-                    <i class="plus-icon fas fa-plus "></i>
-                    <img class="thumbnail-poster" src="./assets/images/sing-2-movie-poster-2.jpg">
-                </div>
-
-                <div class="slideshow-playcontrol">
-                    <button class="far fa-play-circle fa-5x play-button"></button>
-                    <div class="playcontrol-def">
-                        <div class="playcontrol-title">
-                            <span class="playcontrol-head">Karen Gillan on Why She's 'Legitimately Scottish'</span>
-                            <span class="playcontrol-time">3:25</span>
-                        </div>
-                        <div class="playcontrol-des">
-                            giiiigiiiiiliiiiiiii hiii hiiii hoooo
-                        </div>
-                    </div>
-                </div>
-
-                <img class="slide-image" src="./assets/images/eberhard-grossgasteiger-u4RMq06Qg3M-unsplash.jpg">
+            <div class="logo">
+                <img class="imdblogo" src="./assets/images/MV5BMTk3ODA4Mjc0NF5BMl5BcG5nXkFtZTgwNDc1MzQ2OTE@._V1_.png">
             </div>
+            <button class="menu-button">
+                <i class="fa fa-bars"></i>
+                <div class="menu">Menu</div>
+            </button>
 
-            <div class="slide">
-                <div class="slide-shadow"></div>
-                <div class="poster">
-                    <i class="poster-icon fas fa-bookmark fa-4x"></i>
-                    <i class="plus-icon fas fa-plus "></i>
-                    <img class="thumbnail-poster" src="./assets/images/luca-disney-pixar-trailer-poster-2021.jpg">
+            <div class="searchbar">
+                <div class="combobox">
+                    <button class="combobutton">All <i class="fas fa-caret-down" style="color: black;"></i></button>
+
                 </div>
+                <!-- <div class="searchinput-container"> -->
+                <input class="search-input" placeholder="Search IMDb">
+                <!-- </div> -->
 
-                <div class="slideshow-playcontrol">
-                    <button class="far fa-play-circle fa-5x play-button"></button>
-                    <div class="playcontrol-def">
-                        <div class="playcontrol-title">
-                            <span class="playcontrol-head">lalay lay lalay lay </span>
-                            <span class="playcontrol-time">4:35</span>
-                        </div>
-                        <div class="playcontrol-des">
-                            gushuli mushuli
-                        </div>
-                    </div>
-                </div>
-
-                <img class="slide-image" src="./assets/images/daniela-cuevas-t7YycgAoVSw-unsplash.jpg">
+                <button class="searchbutton" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
+            <button class="imdbpro-button">
+                <div class="imdbpro">IMDbPro</div>
+            </button>
+            <div class="vertical-line"></div>
+            <button class="watchlist-button">
+                <i class="far fa-bookmark"></i>
+                <div class="watchlist">Watchlist</div>
+            </button>
+            <button class="signin-button">
+                <div class="signin">Sign In</div>
+            </button>
+        </nav>
 
-            <div class="slide">
-                <div class="slide-shadow"></div>
-                <div class="poster">
-                    <i class="poster-icon fas fa-bookmark fa-4x"></i>
-                    <i class="plus-icon fas fa-plus "></i>
-                    <img class="thumbnail-poster" src="./assets/images/boss_baby_family_business_xlg.jpg">
-                </div>
-
-                <div class="slideshow-playcontrol">
-                    <button class="far fa-play-circle fa-5x play-button"></button>
-                    <div class="playcontrol-def">
-                        <div class="playcontrol-title">
-                            <span class="playcontrol-head">atal matal tootoole gav hasan che khoobe</span>
-                            <span class="playcontrol-time">1:55</span>
-                        </div>
-                        <div class="playcontrol-des">
-                            hasan kachal
-                        </div>
-                    </div>
-                </div>
-
-                <img class="slide-image" src="./assets/images/kaidi-guo-jGlqOzrhn9k-unsplash.jpg">
-            </div>
-
-            <div class="slide">
-                <div class="slide-shadow"></div>
-                <div class="poster">
-                    <a><i class="poster-icon fas fa-bookmark fa-4x"></i></a>
-                    <a><i class="plus-icon fas fa-plus "></i></a>
-                    <img class="thumbnail-poster" src="./assets/images/rayalastdragonposter1joblo.jpg">
-                </div>
-
-                <div class="slideshow-playcontrol">
-                    <button class="far fa-play-circle fa-5x play-button"></button>
-                    <div class="playcontrol-def">
-                        <div class="playcontrol-title">
-                            <span class="playcontrol-head">Topoluyam topolo sooratam mesle hulu</span>
-                            <span class="playcontrol-time">12:30</span>
-                        </div>
-                        <div class="playcontrol-des">
-                            oh no oh no oh no no no :D
-                        </div>
-                    </div>
-                </div>
-
-                <img class="slide-image" src="./assets/images/anthony-intraversato-xr43RescWSA-unsplash.jpg">
-            </div>
-
-            <button class="prev"><i class="fas fa-angle-left fa-3x"></i></button>
-            <button class="next"><i class="fas fa-angle-right fa-3x"></i></button>
-
-        </div>
-        <div class="upnext-container">
-            <div class="upnext-upperpart">
-                <div class="upnext-title">Up next</div>
-                <div class="trailer-container">
-                    <div class="trailer-image">
-                        <img src="./assets/images/rayalastdragonposter1joblo.jpg">
-                    </div>
-                    <div class="trailer-def">
-                        <div class="trailer-button">
-                            <div class="tbutton far fa-play-circle fa-3x"></div>
-                            <span class="ttime">3:25</span>
-                        </div>
-                        <div class="trailer-des">
-                            <div class="tdes-title">Karen Gillan on Why She's 'Legitimately Scottish'</div>
-                            <div class="tdes-spn">giiiigiiiiiliiiiiiii hiii hiiii </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="trailer-container">
-                    <div class="trailer-image">
-                        <img src="./assets/images/turning-red-movie-poster.jpg">
-                    </div>
-                    <div class="trailer-def">
-                        <div class="trailer-button">
-                            <div class="tbutton far fa-play-circle fa-3x"></div>
-                            <span class="ttime">3:25</span>
-                        </div>
-                        <div class="trailer-des">
-                            <div class="tdes-title">Karen Gillan on Why She's 'Legitimately Scottish'</div>
-                            <div class="tdes-spn">giiiigiiiiiliiiiiiii hiii hiiii </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="trailer-container">
-                    <div class="trailer-image">
-                        <img src="./assets/images/sing-2-movie-poster-2.jpg">
-                    </div>
-                    <div class="trailer-def">
-                        <div class="trailer-button">
-                            <i class="tbutton far fa-play-circle fa-3x"></i>
-                            <span class="ttime">3:25</span>
-                        </div>
-                        <div class="trailer-des">
-                            <div class="tdes-title">Karen Gillan on Why She's 'Legitimately Scottish'</div>
-                            <div class="tdes-spn">giiiigiiiiiliiiiiiii hiii hiiii </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="browse-trailer">
-                <a href="#" class="btrailer">Browse trailers</a>
-                <span class="fas fa-chevron-right btrailer-button"></span>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Featured today -->
-    <div class="Grid2">
-
-        <div class="feature-container">
-            <div class="feature-today">Featured today</div>
-            <div class="feature-slideshow">
+        <!-- slideshow & up next -->
+        <div class="grid1">
+            <div class="slideshow-container">
                 <div class="slide">
-                    <div class="feature-item-container">
-                        <div class="feature-img">
-                            <!-- <div class="slide-shadow"></div> -->
-                            <img src="./assets/images/plants/hope-MSgLEgdIUiA-unsplash.jpg">
-                            <div class="feature-image-footer">
-                                <i class="fas fa-list-ul fa-lg"></i>
-                                <div>List</div>
+                    <div class="slideshow-item">
+                        <div class="slide-shadow"></div>
+                        <div class="poster">
+                            <i class="poster-icon fas fa-bookmark fa-4x"></i>
+                            <i class="plus-icon fas fa-plus "></i>
+                            <img class="thumbnail-poster" src="./assets/images/sing-2-movie-poster-2.jpg">
+                        </div>
+
+                        <div class="slideshow-playcontrol">
+                            <button class="far fa-play-circle fa-5x play-button"></button>
+                            <div class="playcontrol-def">
+                                <div class="playcontrol-title">
+                                    <span class="playcontrol-head">Karen Gillan on Why She's 'Legitimately
+                                        Scottish'</span>
+                                    <span class="playcontrol-time">3:25</span>
+                                </div>
+                                <div class="playcontrol-des">
+                                    giiiigiiiiiliiiiiiii hiii hiiii hoooo
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+
+                        <img class="slide-image" src="./assets/images/eberhard-grossgasteiger-u4RMq06Qg3M-unsplash.jpg">
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="feature-item-container">
-                        <div class="feature-img">
-                            <!-- <div class="slide-shadow"></div> -->
-                            <img src="./assets/images/plants/maria-alvares-de-carvalho-gCxTyMV1Das-unsplash.jpg">
-                            <div class="feature-image-footer">
-                                <i class="fas fa-list-ul fa-lg"></i>
-                                <div>List</div>
+                    <div class="slideshow-item">
+                        <div class="slide-shadow"></div>
+                        <div class="poster">
+                            <i class="poster-icon fas fa-bookmark fa-4x"></i>
+                            <i class="plus-icon fas fa-plus "></i>
+                            <img class="thumbnail-poster"
+                                src="./assets/images/luca-disney-pixar-trailer-poster-2021.jpg">
+                        </div>
+
+                        <div class="slideshow-playcontrol">
+                            <button class="far fa-play-circle fa-5x play-button"></button>
+                            <div class="playcontrol-def">
+                                <div class="playcontrol-title">
+                                    <span class="playcontrol-head">lalay lay lalay lay </span>
+                                    <span class="playcontrol-time">4:35</span>
+                                </div>
+                                <div class="playcontrol-des">
+                                    gushuli mushuli
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+
+                        <img class="slide-image" src="./assets/images/daniela-cuevas-t7YycgAoVSw-unsplash.jpg">
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="feature-item-container">
-                        <div class="feature-img">
-                            <!-- <div class="slide-shadow"></div> -->
-                            <img src="./assets/images/plants/okeykat-tgxqpsVG-0A-unsplash.jpg">
-                            <div class="feature-image-footer">
-                                <i class="fas fa-list-ul fa-lg"></i>
-                                <div>List</div>
+                    <div class="slideshow-item">
+                        <div class="slide-shadow"></div>
+                        <div class="poster">
+                            <i class="poster-icon fas fa-bookmark fa-4x"></i>
+                            <i class="plus-icon fas fa-plus "></i>
+                            <img class="thumbnail-poster" src="./assets/images/boss_baby_family_business_xlg.jpg">
+                        </div>
+
+                        <div class="slideshow-playcontrol">
+                            <button class="far fa-play-circle fa-5x play-button"></button>
+                            <div class="playcontrol-def">
+                                <div class="playcontrol-title">
+                                    <span class="playcontrol-head">atal matal tootoole gav hasan che khoobe</span>
+                                    <span class="playcontrol-time">1:55</span>
+                                </div>
+                                <div class="playcontrol-des">
+                                    hasan kachal
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+
+                        <img class="slide-image" src="./assets/images/kaidi-guo-jGlqOzrhn9k-unsplash.jpg">
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="feature-item-container">
-                        <div class="feature-img">
-                            <!-- <div class="slide-shadow"></div> -->
-                            <img src="./assets/images/plants/scott-webb-EoRhamEVuoE-unsplash.jpg">
-                            <div class="feature-image-footer">
-                                <i class="fas fa-list-ul fa-lg"></i>
-                                <div>List</div>
+                    <div class="slideshow-item">
+                        <div class="slide-shadow"></div>
+                        <div class="poster">
+                            <a><i class="poster-icon fas fa-bookmark fa-4x"></i></a>
+                            <a><i class="plus-icon fas fa-plus "></i></a>
+                            <img class="thumbnail-poster" src="./assets/images/rayalastdragonposter1joblo.jpg">
+                        </div>
+
+                        <div class="slideshow-playcontrol">
+                            <button class="far fa-play-circle fa-5x play-button"></button>
+                            <div class="playcontrol-def">
+                                <div class="playcontrol-title">
+                                    <span class="playcontrol-head">Topoluyam topolo sooratam mesle hulu</span>
+                                    <span class="playcontrol-time">12:30</span>
+                                </div>
+                                <div class="playcontrol-des">
+                                    oh no oh no oh no no no :D
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+
+                        <img class="slide-image" src="./assets/images/anthony-intraversato-xr43RescWSA-unsplash.jpg">
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="feature-item-container">
-                        <div class="feature-img">
-                            <!-- <div class="slide-shadow"></div> -->
-                            <img src="./assets/images/plants/timothy-eberly-yuiJO6bvHi4-unsplash.jpg">
-                            <div class="feature-image-footer">
-                                <i class="fas fa-list-ul fa-lg"></i>
-                                <div>List</div>
-                            </div>
-                        </div>
-                        <br>
-                        <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="feature-item-container">
-                        <div class="feature-img">
-                            <!-- <div class="slide-shadow"></div> -->
-                            <img src="./assets/images/plants/valery-rabchenyuk-yZUJ3HqcUdU-unsplash.jpg">
-                            <div class="feature-image-footer">
-                                <i class="fas fa-list-ul fa-lg"></i>
-                                <div>List</div>
-                            </div>
-                        </div>
-                        <br>
-                        <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
-                    </div>
-                </div>
+
+                <button class="prev"><i class="fas fa-angle-left fa-3x"></i></button>
+                <button class="next"><i class="fas fa-angle-right fa-3x"></i></button>
+
             </div>
+            <div class="upnext-container">
+                <div class="upnext-upperpart">
+                    <div class="upnext-title">Up next</div>
+                    <div class="trailer-container">
+                        <div class="trailer-image">
+                            <img src="./assets/images/rayalastdragonposter1joblo.jpg">
+                        </div>
+                        <div class="trailer-def">
+                            <div class="trailer-button">
+                                <div class="tbutton far fa-play-circle fa-3x"></div>
+                                <span class="ttime">3:25</span>
+                            </div>
+                            <div class="trailer-des">
+                                <div class="tdes-title">Karen Gillan on Why She's 'Legitimately Scottish'</div>
+                                <div class="tdes-spn">giiiigiiiiiliiiiiiii hiii hiiii </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <button class="prev-feature"><i class="fas fa-angle-left fa-3x"></i></button>
-            <button class="next-feature"><i class="fas fa-angle-right fa-3x"></i></button>
+                    <div class="trailer-container">
+                        <div class="trailer-image">
+                            <img src="./assets/images/turning-red-movie-poster.jpg">
+                        </div>
+                        <div class="trailer-def">
+                            <div class="trailer-button">
+                                <div class="tbutton far fa-play-circle fa-3x"></div>
+                                <span class="ttime">3:25</span>
+                            </div>
+                            <div class="trailer-des">
+                                <div class="tdes-title">Karen Gillan on Why She's 'Legitimately Scottish'</div>
+                                <div class="tdes-spn">giiiigiiiiiliiiiiiii hiii hiiii </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="trailer-container">
+                        <div class="trailer-image">
+                            <img src="./assets/images/sing-2-movie-poster-2.jpg">
+                        </div>
+                        <div class="trailer-def">
+                            <div class="trailer-button">
+                                <i class="tbutton far fa-play-circle fa-3x"></i>
+                                <span class="ttime">3:25</span>
+                            </div>
+                            <div class="trailer-des">
+                                <div class="tdes-title">Karen Gillan on Why She's 'Legitimately Scottish'</div>
+                                <div class="tdes-spn">giiiigiiiiiliiiiiiii hiii hiiii </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="browse-trailer">
+                    <a href="#" class="btrailer">Browse trailers</a>
+                    <span class="fas fa-chevron-right btrailer-button"></span>
+                </div>
+
+            </div>
         </div>
 
-    </div>
-    <div style="height: 20vh;"></div>
+        <!-- Featured today -->
+        <div class="Grid2">
+            <div class="feature-container">
+                <div class="feature-today">Featured today</div>
+                <div class="feature-slideshow">
+                    <div class="slide">
+                        <div class="feature-item-container">
+                            <div class="feature-img">
+                                <!-- <div class="slide-shadow"></div> -->
+                                <img src="./assets/images/plants/hope-MSgLEgdIUiA-unsplash.jpg">
+                                <div class="feature-image-footer">
+                                    <i class="fas fa-list-ul fa-lg"></i>
+                                    <div>List</div>
+                                </div>
+                            </div>
+                            <br>
+                            <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="feature-item-container">
+                            <div class="feature-img">
+                                <!-- <div class="slide-shadow"></div> -->
+                                <img src="./assets/images/plants/maria-alvares-de-carvalho-gCxTyMV1Das-unsplash.jpg">
+                                <div class="feature-image-footer">
+                                    <i class="fas fa-list-ul fa-lg"></i>
+                                    <div>List</div>
+                                </div>
+                            </div>
+                            <br>
+                            <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="feature-item-container">
+                            <div class="feature-img">
+                                <!-- <div class="slide-shadow"></div> -->
+                                <img src="./assets/images/plants/okeykat-tgxqpsVG-0A-unsplash.jpg">
+                                <div class="feature-image-footer">
+                                    <i class="fas fa-list-ul fa-lg"></i>
+                                    <div>List</div>
+                                </div>
+                            </div>
+                            <br>
+                            <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="feature-item-container">
+                            <div class="feature-img">
+                                <!-- <div class="slide-shadow"></div> -->
+                                <img src="./assets/images/plants/scott-webb-EoRhamEVuoE-unsplash.jpg">
+                                <div class="feature-image-footer">
+                                    <i class="fas fa-list-ul fa-lg"></i>
+                                    <div>List</div>
+                                </div>
+                            </div>
+                            <br>
+                            <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="feature-item-container">
+                            <div class="feature-img">
+                                <!-- <div class="slide-shadow"></div> -->
+                                <img src="./assets/images/plants/timothy-eberly-yuiJO6bvHi4-unsplash.jpg">
+                                <div class="feature-image-footer">
+                                    <i class="fas fa-list-ul fa-lg"></i>
+                                    <div>List</div>
+                                </div>
+                            </div>
+                            <br>
+                            <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="feature-item-container">
+                            <div class="feature-img">
+                                <!-- <div class="slide-shadow"></div> -->
+                                <img src="./assets/images/plants/valery-rabchenyuk-yZUJ3HqcUdU-unsplash.jpg">
+                                <div class="feature-image-footer">
+                                    <i class="fas fa-list-ul fa-lg"></i>
+                                    <div>List</div>
+                                </div>
+                            </div>
+                            <br>
+                            <a class="feature-item-footer">The Most Anticipated Movies Coming in 2021</a>
+                        </div>
+                    </div>
+                </div>
 
+                <button class="prev-feature"><i class="fas fa-angle-left fa-3x"></i></button>
+                <button class="next-feature"><i class="fas fa-angle-right fa-3x"></i></button>
+
+            </div>
+
+        </div>
+        <div style="height: 20vh;"></div>
+
+        <!-- what to whatch -->
+        <div class="grid3">
+            <div class="whattowatch-header">
+                <div class="wtw-title">
+                    What to watch
+                </div>
+                <div></div>
+                <div class="wtw-recommendation">
+                    <a>Get more recommendation</a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="top-picks-foryou">
+                <button class="top-pick-button">
+                    <div class="tpfy-title-container">
+                        <div class="vertical-line-yellow"></div>
+                        <div class="tpfy-title">Top picks</div>
+                        <i class="fas fa-chevron-right fa-2x"></i>
+                    </div>
+                    <div class="tpfy-desription-container">
+                        <span class="tpfy-desription">TV shows and movies just for you</span>
+                    </div>
+                </button>
+            </div>
+            <div class="wtw-signIn">
+                <a>Sign in</a>
+            </div>
+            <div class="whattowatch-slider-container">
+
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/turning-red-movie-poster.jpg">
+                            <i></i>
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Turning red</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/sing-2-movie-poster-2.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>blah blah</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/rayalastdragonposter1joblo.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>hi hi hi</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/boss_baby_family_business_xlg.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>yoyoyoyoyo</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/turning-red-movie-poster.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Lorem ipsum</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/sing-2-movie-poster-2.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Turning red</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/rayalastdragonposter1joblo.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Turning red</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/boss_baby_family_business_xlg.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Turning red</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/hotel-transylvania-4.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Turning red</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/sing-2-movie-poster-2.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Turning red</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/spirit-untamed-poster-606490a67edf8-1.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Turning red</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="wtw-slider-item">
+                        <div class="wtw-i-img">
+                            <img src="./assets/images/sing-2-movie-poster-6.jpg">
+                        </div>
+                        <div class="wtw-i-rating">
+                            <div class="imdb-rating">
+                                <i class="fas fa-star fa-sm"></i>
+                                <span class="rating-number">7.5</span>
+                            </div>
+                            <button class="rating-button">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <div class="wtw-i-title">
+                            <a>Turning red</a>
+                        </div>
+                        <div class="wtw-i-watchoption">
+                            <button class="watchoption-button">
+                                <i class="fas fa-plus"></i>
+                                <span>watchlist</span>
+                            </button>
+                        </div>
+                        <div class="wtw-i-trailer">
+                            <button class="wtw-i-t-play">
+                                <i class="fas fa-play"></i>
+                                <span>Trailer</span>
+                            </button>
+                            <button class="wtw-i-t-info">
+                                <i class="far fa-question-circle fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="wtw-slider-item">
+                <div class="wtw-i-img">
+                    <img src="./assets/images/turning-red-movie-poster.jpg">
+                </div>
+                <div class="wtw-i-rating">
+                    <div class="imdb-rating">
+                        <i class="fas fa-star fa-sm"></i>
+                        <span class="rating-number">7.5</span>
+                    </div>
+                    <button class="rating-button">
+                        <i class="far fa-star"></i>
+                    </button>
+                </div>
+                <div class="wtw-i-title">
+                    <a>Turning red</a>
+                </div>
+                <div class="wtw-i-watchoption">
+                    <button class="watchoption-button">
+                        <i class="fas fa-plus"></i>
+                        <span>watchlist</span>
+                    </button>
+                </div>
+                <div class="wtw-i-trailer">
+                    <button class="wtw-i-t-play">
+                        <i class="fas fa-play"></i>
+                        <span>Trailer</span>
+                    </button>
+                    <button class="wtw-i-t-info">
+                        <i class="far fa-question-circle fa-lg"></i>
+                    </button>
+                </div>
+            </div> -->
+
+                <!-- <div class="wtw-slider-item">
+                <div class="wtw-i-img">
+                    <img src="./assets/images/sing-2-movie-poster-3.jpg">
+                </div>
+                <div class="wtw-i-rating">
+                    <div class="imdb-rating">
+                        <i class="fas fa-star fa-sm"></i>
+                        <span class="rating-number">7.5</span>
+                    </div>
+                    <button class="rating-button">
+                        <i class="far fa-star"></i>
+                    </button>
+                </div>
+                <div class="wtw-i-title">
+                    <a>Turning red</a>
+                </div>
+                <div class="wtw-i-watchoption">
+                    <button class="watchoption-button">
+                        <i class="fas fa-plus"></i>
+                        <span>watchlist</span>
+                    </button>
+                </div>
+                <div class="wtw-i-trailer">
+                    <button class="wtw-i-t-play">
+                        <i class="fas fa-play"></i>
+                        <span>Trailer</span>
+                    </button>
+                    <button class="wtw-i-t-info">
+                        <i class="far fa-question-circle fa-lg"></i>
+                    </button>
+                </div>
+            </div> -->
+
+                <button class="wtw-prev"><i class="fas fa-angle-left fa-3x"></i></button>
+                <button class="wtw-next"><i class="fas fa-angle-right fa-3x"></i></button>
+            </div>
+
+
+        </div>
+
+        <div style="height: 20vh;"></div>
+        <div style="height: 20vh;"></div>
+        <div style="height: 20vh;"></div>
+      
+
+  </div>
+  
     <!-- menu modal  -->
     <div class="modal">
         <div class="modal-container">
@@ -360,7 +884,6 @@
                         <div class="modal-content-head">
                             <span class="fas fa-tv fa-lg"></span>
                             <span class="modal-title">Tv Shows</span>
-
                         </div>
                         <div class="modal-content-items">
                             <ul>
@@ -373,12 +896,10 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="watch">
                         <div class="modal-content-head">
                             <span class="fas fa-play-circle fa-lg"></span>
                             <span class="modal-title">Watch</span>
-
                         </div>
                         <div class="modal-content-items">
                             <ul>
@@ -391,15 +912,11 @@
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
-
                 <div class="awards&events">
                     <div class="modal-content-head">
                         <span class="fas fa-star fa-lg"></span>
                         <span class="modal-title">Awards & Events</span>
-
                     </div>
                     <div class="modal-content-items">
                         <ul>
@@ -416,7 +933,6 @@
                             <a>TV News</a>
                             <a>India TV Spotlight</a>
                             <a>Oscars</a>
-
                         </ul>
                     </div>
                 </div>
@@ -424,7 +940,6 @@
                     <div class="modal-content-head">
                         <span class="fas fa-user-friends fa-lg"></span>
                         <span class="modal-title">Celebs</span>
-
                     </div>
                     <div class="modal-content-items">
                         <ul>
@@ -435,14 +950,11 @@
                     </div>
                 </div>
                 <div class="middle-section">
-
                 </div>
-
                 <div class="community">
                     <div class="modal-content-head">
                         <span class="fas fa-globe-americas fa-lg"></span>
                         <span class="modal-title">Community</span>
-
                     </div>
                     <div class="modal-content-items">
                         <ul>
@@ -452,21 +964,17 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
-
 
     <script src="https://kit.fontawesome.com/3c81346100.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/js/modal-script.js"></script>
     <script src="./assets/js/slideshow.js"></script>
-    <script src="./assets/js/featureToday-slideshow.js"></script>
-
     <script>
-        implementSlider(document.querySelector(".slideshow-container"), 1,'prev','next');
-        implementSlider(document.querySelector(".feature-container"), 2,'prev-feature','next-feature')
+        implementSlider(document.querySelector(".slideshow-container"), 1, 'prev', 'next');
+        implementSlider(document.querySelector(".feature-container"), 2, 'prev-feature', 'next-feature')
+        implementSlider(document.querySelector(".whattowatch-slider-container"), 6, 'wtw-prev', 'wtw-next')
     </script>
 </body>
 
