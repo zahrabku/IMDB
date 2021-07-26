@@ -1,0 +1,154 @@
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: 1s;
+    animation-name: menu_modal;
+    animation-duration: 0.5s;
+}
+
+.modal-container {
+    width: 100%;
+    padding: 30px 240px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.imdblogo-modal {
+    width: 97px;
+    height: 47px;
+}
+
+.modal-close {
+    border-radius: 100%;
+    border-style: none;
+    background-color: rgb(230, 185, 30);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: rgb(203, 163, 23);
+}
+
+.modal-content-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 16px;
+}
+
+ul>a {
+    display: block;
+    margin-bottom: 11px;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+}
+
+.modal-content-head>*:first-child {
+    color: rgb(230, 185, 30);
+}
+
+.tvshows {
+    margin-bottom: 40px;
+}
+
+@keyframes menu_modal{
+    0%{top: -100%;}
+    100%{
+        top: 0;
+    }
+}
+
+
+
+@media screen and (max-width:1024px){
+
+    .modal{
+        display: none;
+        width: 310px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+        animation-name: side_menu_modal;
+        animation-duration: 0.5s;
+        
+    }
+
+    .modal-container{
+        padding: 20px;
+        height: 100%;
+    }
+
+    .modal_header{
+        border-bottom: 1px solid gray;
+    }
+
+    .imdblogo-modal{
+        display: none;
+    }
+
+    .modal-close {
+        background-color: rgb(31, 31, 31);
+        color: white;
+    }
+
+
+    .modal-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-content-items{
+        display: none;
+    }
+
+    .modal-content-head>*:first-child {
+        color: rgb(141, 141, 141);
+    }
+
+    .modal-title{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .tvshows{
+        margin-bottom: 0px;
+    }
+
+
+}
+
+@keyframes side_menu_modal{
+    0%{left: -100%;}
+    100%{
+        left: 0;
+    }
+}

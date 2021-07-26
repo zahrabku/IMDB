@@ -1,0 +1,78 @@
+.upnext-container{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upnext-title{
+    font-weight: 700;
+    color: rgb(230, 185, 30);
+    font-size: 20px;
+    margin-bottom:40px ;
+}
+
+.trailer-container{
+    display: flex;
+    margin-bottom:20px;
+    padding-left: 15px;
+    gap: 15px;
+}
+
+.trailer-image img{
+    width: 88px;
+    height: 130px;
+    
+}
+
+.trailer-def{
+
+
+}
+
+.tbutton{
+
+}
+
+.trailer-def:hover .tbutton{
+    color:rgb(230, 185, 30) ;
+    transition: 0.2 ease-in;
+}
+
+.ttime{
+    color: rgb(179,179,179);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.trailer-des{
+    margin-top: 10px;
+}
+
+.tdes-title{
+    font-size: 16px;
+}
+
+.tdes-spn{
+    color: rgb(179,179,179);
+    font-size: 15px;
+    padding-top: 3px;
+}
+
+.browse-trailer:hover,.btrailer.btrailer-button{
+    color: rgb(230, 185, 30);
+}
+
+.btrailer{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 15px;
+
+}
+
+.browse-trailer a{
+    margin-right: 5px;
+}
+

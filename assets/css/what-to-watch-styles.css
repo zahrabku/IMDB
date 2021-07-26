@@ -1,0 +1,249 @@
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Roboto', sans-serif;
+    row-gap: 10px;
+    overflow: hidden;
+}
+
+.wtw-slider-item button{
+    cursor: pointer;
+    border-style: none;
+}
+
+.whattowatch-header {
+    grid-column: 1/ span 3;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.wtw-title{
+    color: rgb(230, 185, 30);
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.wtw-recommendation{
+    color: rgb(79,139,217);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.wtw-recommendation i{
+    color: rgb(79,139,217)
+}
+
+.top-picks-foryou {
+    grid-column: 1/span 3;
+}
+
+.top-pick-button{
+    background: black;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px;
+
+}
+
+.tpfy-title-container{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.vertical-line-yellow{
+    border-left: 4px solid rgb(230, 185, 30);
+    height: 30px;
+    margin: 0px 5px ;
+}
+
+.tpfy-title{
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.tpfy-desription{
+    color: rgb(179,179,179);
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+.wtw-signIn{
+    color:rgb(79,139,217) ;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.wtw-signIn:hover{
+    text-decoration: underline;
+}
+
+.whattowatch-slider-container{
+    display: grid;
+    grid-template-columns: repeat(1000, calc(8.33333% - .91667 * 1.5rem - 0rem));
+    gap: 22px;
+    position: relative;
+    grid-column: 1/span 3;
+}
+
+.whattowatch-slider-container .slide{
+    grid-column-start:span 2 !important;
+
+}
+
+.wtw-slider-item{
+    grid-column-start:span 2 !important;
+    grid-column-end: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(26,26,26);
+    border-radius: 3px;
+}
+
+.wtw-i-img{
+    width: 100%;
+}
+
+.wtw-i-img img{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.wtw-i-rating{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 10px;
+}
+
+.imdb-rating i{
+    color:rgb(230, 185, 30) ;
+}
+
+.rating-number{
+    color: gray;
+}
+
+.rating-button{
+    background-color:rgb(26,26,26) ;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.rating-button i{
+    color: gray;
+}
+
+.rating-button:hover{
+    background-color:rgb(49, 49, 49) ;
+}
+
+.wtw-i-title{
+    color: white;
+    cursor: pointer;
+    height: 2.5rem;
+    padding: 5px 10px;
+}
+
+.wtw-i-title:hover{
+    text-decoration: underline;
+}
+
+.wtw-i-watchoption{
+    padding: 5px 10px;
+}
+
+.watchoption-button{
+    color: rgb(79,139,217);
+    background-color: rgb(44,44,44);
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.watchoption-button:hover{
+    background-color:rgb(73, 73, 73) ;
+}
+
+.watchoption-button i{
+    color: rgb(79,139,217);
+}
+
+.wtw-i-trailer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.wtw-i-t-play{
+    background-color: rgb(26,26,26);
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.wtw-i-t-info{
+    background-color: rgb(26,26,26);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.wtw-i-t-play:hover , .wtw-i-t-info:hover{
+    background-color: rgb(44,44,44);
+}
+
+.wtw-prev ,.wtw-next{
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    border-radius: 5px;
+    top: 40%;
+    width: 50px;
+    height: 65px;
+    border-style: none;
+    border: 1px solid white;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.wtw-next{
+    right: 0;
+}
+
+.wtw-prev:hover i {
+    color: rgb(230, 185, 30);
+    transition: 0.15s ease-in;
+}
+
+.wtw-next:hover i {
+    color: rgb(230, 185, 30);
+    transition: 0.15s ease-in;
+}
+
+@media screen and (max-width:1024px) {
+
+    .wtw-slider-item{
+        grid-column-start:span 3 !important;
+    }
+
+}
