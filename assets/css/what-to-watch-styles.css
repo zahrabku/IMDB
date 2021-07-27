@@ -95,11 +95,10 @@
 
 .whattowatch-slider-container .slide{
     grid-column-start:span 2 !important;
-
 }
 
 .wtw-slider-item{
-    grid-column-start:span 2 !important;
+    grid-column-start:span 1 !important;
     grid-column-end: auto;
     display: flex;
     flex-direction: column;
@@ -261,8 +260,13 @@
 
 @media screen and (max-width:1024px) {
 
-    .wtw-slider-item{
-        grid-column-start:span 3 !important;
+    /* .whattowatch-slider-container .slide{
+        grid-column-start:span 4 !important;
     }
+    
+
+    .wtw-slider-item{
+        grid-column-start:span 4 !important;
+    } */
 
 }

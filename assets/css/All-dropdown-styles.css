@@ -3,7 +3,7 @@
     position: absolute;
     top: 38px;
     left: 0px;
-    width: 16vw;
+    width: 230px;
     background-color: rgb(18,18,18);
     z-index: 10;
     border-radius: 8px;
@@ -43,4 +43,8 @@
     height: 0.5px;
     background-color: rgb(145, 145, 145);
     border-color: rgb(145, 145, 145);
+}
+
+.dropdown-container .dropdown-item:first-child * {
+    color: rgb(230,185,30);
 }

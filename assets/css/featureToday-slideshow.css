@@ -108,3 +108,15 @@
 .feature-item-footer:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width:1024px){
+
+    .Grid2{
+        display: grid;
+        grid-template-columns:1fr;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    
+    }
+
+}
