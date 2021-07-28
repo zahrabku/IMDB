@@ -1,20 +1,7 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    
-}
-
-
-body{
-    margin: 0px;
-    width: 86%;
-    margin: auto;
-    height: 100%;
-}
-
-button{
+.button{
     border-style: none;
     outline: none;
+    color: white;
 }
 
 .navbar{
@@ -27,14 +14,19 @@ button{
     width: 100%;
 }
 
+.navbar__hambergur_menu{
+    display: none;
+    outline: none;
+    border-style: none;
+    background-color: black;
+}
 
-.imdblogo{
+.logo__imdb{
     width: 75px;
     height: 37px;
 }
 
-
-.menu-button{
+.navbar__menu_button{
     background-color: hsl(0,0%,7%);
     outline: none;
     border-style: none;
@@ -49,61 +41,21 @@ button{
     margin: 0px 5px;
 }
 
-.menulogo{
-    width: 30px;
-    height: 37px;
-    
-}
-
-.menu-button:hover{
+.navbar__menu_button:hover{
     background-color:rgb(50,50,50) ;
 }
 
-.menu{
-    
+.navbar__menu_button__text{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    
 }
 
-.combobox{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height:37px ;
-    
-}
-
-.combobutton:hover{
-    background-color:rgb(180, 180, 180)
-}
-
-.combobutton{
-    background-color: white;
-    border-style: none;
-    height:37px ;
-    border-radius: 3px 0px 0px 3px;
-    border-right: gray 1px solid;
-    width:55px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-
-}
-
-.searchbar{
+.navbar__searchbar{
     display: flex;
     width: 500px;
 }
 
-/* .searchbar:focus-within{
-    outline:2px solid rgb(230,185,30) ;
-    outline-offset: -2px;
-    border-radius: 5px;
-    transition: outline 0.1s linear;
-} */
-
-.search-input{
+.navbar__searchbar__input{
     /* width: 600px; */
     height: 37px;
     border-style: none;
@@ -111,28 +63,29 @@ button{
     width: 720px;
 }
 
-.search-input:focus{
+.navbar__searchbar__input:focus{
     outline: none;
 }
 
-.search-input::-ms-clear{
+.navbar__searchbar__input::-ms-clear{
     display: none;
 }
 
-.searchbutton{
+.navbar__searchbar__button{
     background-color: white;
     border-style: none;
     border-radius: 0px 3px 3px 0px;
     height: 37px;
     cursor: pointer;
-    padding-right: 15px;
+    padding-right: 7px;
+    color: black;
 }
 
-.imdbpro{
-    font-family: 'Oswald', sans-serif;
+.navbar__searchbar__button:hover{
+    background-color: rgb(233, 233, 233);
 }
 
-.imdbpro-button{
+.navbar__imdbpro{
     background-color: hsl(0,0%,7%);
     outline: none;
     border-style: none;
@@ -142,24 +95,21 @@ button{
     border-radius: 3px;
 }
 
-.imdbpro-button:hover{
+.navbar__imdbpro:hover{
     background-color:rgb(50,50,50) ;
 }
 
+.navbar__imdbpro__text{
+    font-family: 'Oswald', sans-serif;
+}
 
-.vertical-line{
+.vertical--line--gray{
     border-left: 3px solid rgb(50,50,50);
     height: 37px;
     margin: 0px 5px ;
 }
 
-.watchlist{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-.watchlist-button{
-
+.navbar__watchlist{
     background-color: hsl(0,0%,7%);
     outline: none;
     border-style: none;
@@ -170,19 +120,18 @@ button{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
-.watchlist-button:hover{
+.navbar__watchlist:hover{
     background-color:rgb(50,50,50) ;
 }
 
-.signin{
+.navbar__watchlist__text{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
-.signin-button{
+.navbar__signin{
     background-color: hsl(0,0%,7%);
     outline: none;
     border-style: none;
@@ -192,34 +141,40 @@ button{
     border-radius: 3px;
 }
 
-.signin-button:hover{
+.navbar__signin:hover{
     background-color:rgb(50,50,50) ;
 }
 
-.sidemenue-button{
-    display: none;
-    outline: none;
-    border-style: none;
-    background-color: black;
+.navbar__signin__text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
+/* end of navbar */
+
+/* .searchbar:focus-within{
+    outline:2px solid rgb(230,185,30) ;
+    outline-offset: -2px;
+    border-radius: 5px;
+    transition: outline 0.1s linear;
+} */
 
 @media screen and (max-width:1024px){
 
-    .menu-button{
-        display: none;
-    }
-
-    .imdbpro-button{
-        display: none;
-    }
-
-    .watchlist-button{
-        display: none;
-    }
-
-    .sidemenue-button{
+    .navbar__hambergur_menu{
         display: inline;
+    }
+
+    .navbar__menu_button{
+        display: none;
+    }
+
+    .navbar__imdbpro{
+        display: none;
+    }
+
+    .navbar__watchlist{
+        display: none;
     }
 
     body{
@@ -227,10 +182,6 @@ button{
         width: 98%;
         margin: auto;
     }
-
-
-
-    
 }
 
 @media screen and (max-width:600px){
@@ -239,3 +190,7 @@ button{
     
 }
 
+/* .menulogo{
+    width: 30px;
+    height: 37px;
+} */

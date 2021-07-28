@@ -1,78 +1,70 @@
-.upnext-container{
+.grid1__upnext{
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-
 }
 
-.upnext-title{
+.grid1__upnext__title{
     font-weight: 700;
     color: rgb(230, 185, 30);
     font-size: 20px;
     margin-bottom:40px ;
 }
 
-.trailer-container{
+.grid1__upnext__trailer__item{
     display: flex;
     margin-bottom:20px;
     padding-left: 15px;
     gap: 15px;
 }
 
-.trailer-image img{
+.grid1__upnext__trailer__item__image img{
     width: 88px;
     height: 130px;
     
 }
 
-.trailer-def{
+.grid1__upnext__trailer__item__text{
 
 
 }
 
-.tbutton{
-
-}
-
-.trailer-def:hover .tbutton{
-    color:rgb(230, 185, 30) ;
-    transition: 0.2 ease-in;
-}
-
-.ttime{
+.grid1__upnext__trailer__item__text__button__time{
     color: rgb(179,179,179);
     font-size: 14px;
     margin-left: 5px;
 }
 
-.trailer-des{
+.grid1__upnext__trailer__item__text__title{
     margin-top: 10px;
 }
 
-.tdes-title{
+.grid1__upnext__trailer__item__text__title__head{
     font-size: 16px;
 }
 
-.tdes-spn{
+.grid1__upnext__trailer__item__text__title__span{
     color: rgb(179,179,179);
     font-size: 15px;
     padding-top: 3px;
 }
 
-.browse-trailer:hover,.btrailer.btrailer-button{
-    color: rgb(230, 185, 30);
-}
-
-.btrailer{
+.grid1__upnext__browse_trailer_link{
     text-decoration: none;
     color: inherit;
     font-size: 20px;
     font-weight: 700;
     padding-left: 15px;
-
 }
 
-.browse-trailer a{
+.grid1__upnext__browse_trailer a{
     margin-right: 5px;
 }
+
+.grid1__upnext__browse_trailer:hover,.grid1__upnext__browse_trailer_link.grid1__upnext__browse_trailer_icontrailer-button{
+    color: rgb(230, 185, 30);
+}
+
+
+
 

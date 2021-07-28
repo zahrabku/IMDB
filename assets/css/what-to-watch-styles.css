@@ -6,98 +6,92 @@
     overflow: hidden;
 }
 
-.wtw-slider-item button{
-    cursor: pointer;
-    border-style: none;
-}
-
-.whattowatch-header {
+.grid3__what_to_watch__title {
     grid-column: 1/ span 3;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-
 }
 
-.wtw-title{
+.grid3__what_to_watch__title__header{
     color: rgb(230, 185, 30);
     font-size: 33px;
     font-weight: 600;
 }
 
-.wtw-recommendation{
+.grid3__what_to_watch__title__recommendation{
     color: rgb(79,139,217);
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
 }
-.wtw-recommendation i{
+
+.grid3__what_to_watch__title__recommendation i{
     color: rgb(79,139,217)
 }
 
-.top-picks-foryou {
+.grid3__top_pick {
     grid-column: 1/span 3;
 }
 
-.top-pick-button{
+.grid3__top_pick__button{
     background: black;
     border-style: none;
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 0px;
-
 }
 
-.tpfy-title-container{
+.grid3__top_pick__button__title{
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: flex-start;
 }
 
-.vertical-line-yellow{
-    border-left: 4px solid rgb(230, 185, 30);
-    height: 30px;
-    margin: 0px 5px ;
-}
-
-.tpfy-title{
+.grid3__top_pick__button__title__text{
     color: white;
     font-size: 23px;
     font-weight: 600;
 }
 
-.tpfy-desription{
+.grid3__top_pick__button__description__span{
     color: rgb(179,179,179);
     font-size: 17px;
     font-weight: 400;
-
 }
 
-.wtw-signIn{
+.grid3__sign_in{
     color:rgb(79,139,217) ;
     cursor: pointer;
     margin: 10px 0px;
 }
 
-.wtw-signIn:hover{
+.grid3__sign_in:hover{
     text-decoration: underline;
 }
 
-.whattowatch-slider-container{
+.grid3__what_to_watch__slideshow{
     display: grid;
     grid-template-columns: repeat(1000, calc(8.33333% - .91667 * 1.5rem - 0rem));
-    gap: 22px;
+    gap: 24px;
     position: relative;
     grid-column: 1/span 3;
+    overflow: hidden;
 }
 
-.whattowatch-slider-container .slide{
+.grid3__what_to_watch__slideshow .slide{
     grid-column-start:span 2 !important;
 }
 
-.wtw-slider-item{
+.vertical--line--yellow{
+    border-left: 4px solid rgb(230, 185, 30);
+    height: 30px;
+    margin: 0px 5px ;
+}
+
+.grid3__what_to_watch__slideshow__item{
     grid-column-start:span 1 !important;
     grid-column-end: auto;
     display: flex;
@@ -108,6 +102,16 @@
     position: relative;
 }
 
+.grid3__what_to_watch__slideshow__item__image{
+    width: 100%;
+}
+
+.grid3__what_to_watch__slideshow__item__image img{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
 /* .wtw-slider-item > i{
     position: absolute;
     top:0;
@@ -116,71 +120,64 @@
     opacity: 50%;
 } */
 
-.plus-icon-sm{
+/* .wtw-slider-item button{
+    cursor: pointer;
+    border-style: none;
+} */
+
+.poster__icon__plus--sm{
     position: absolute;
     top: 13px;
-    left: 10px;
+    left: 11px;
     opacity: 1;
     color: white;
 }
 
-
-
-.wtw-i-img{
-    width: 100%;
-}
-
-.wtw-i-img img{
-    width: 100%;
-    height: 275px;
-    object-fit: cover;
-}
-
-.wtw-i-rating{
+.grid3__what_to_watch__slideshow__item__rating{
     display: flex;
     justify-content: flex-start;
     gap: 30px;
     padding: 10px;
 }
 
-.imdb-rating i{
+.grid3__what_to_watch__slideshow__item__rating__imdb i{
     color:rgb(230, 185, 30) ;
 }
 
-.rating-number{
+.grid3__what_to_watch__slideshow__item__rating__imdb__number{
     color: gray;
 }
 
-.rating-button{
+.grid3__what_to_watch__slideshow__item__rating__button{
     background-color:rgb(26,26,26) ;
     width: 50px;
     border-radius: 5px;
 }
 
-.rating-button i{
+.grid3__what_to_watch__slideshow__item__rating__button i{
     color: gray;
 }
 
-.rating-button:hover{
+.grid3__what_to_watch__slideshow__item__rating__button:hover{
     background-color:rgb(49, 49, 49) ;
 }
 
-.wtw-i-title{
+.grid3__what_to_watch__slideshow__item__title{
     color: white;
     cursor: pointer;
     height: 2.5rem;
     padding: 5px 10px;
 }
 
-.wtw-i-title:hover{
+.grid3__what_to_watch__slideshow__item__title:hover{
     text-decoration: underline;
 }
 
-.wtw-i-watchoption{
+.grid3__what_to_watch__slideshow__item__watchoption{
     padding: 5px 10px;
 }
 
-.watchoption-button{
+.grid3__what_to_watch__slideshow__item__watchoption__button{
     color: rgb(79,139,217);
     background-color: rgb(44,44,44);
     width: 100%;
@@ -192,22 +189,22 @@
     gap: 10px;
 }
 
-.watchoption-button:hover{
+.grid3__what_to_watch__slideshow__item__watchoption__button:hover{
     background-color:rgb(73, 73, 73) ;
 }
 
-.watchoption-button i{
+.grid3__what_to_watch__slideshow__item__watchoption__button i{
     color: rgb(79,139,217);
 }
 
-.wtw-i-trailer{
+.grid3__what_to_watch__slideshow__item__trailer{
     padding: 10px;
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
 }
 
-.wtw-i-t-play{
+.grid3__what_to_watch__slideshow__item__trailer__playbutton{
     background-color: rgb(26,26,26);
     color: white;
     border-radius: 5px;
@@ -219,54 +216,31 @@
     gap: 10px;
 }
 
-.wtw-i-t-info{
+.grid3__what_to_watch__slideshow__item__trailer__infobutton{
     background-color: rgb(26,26,26);
     border-radius: 50%;
     height: 40px;
     width: 40px;
 }
 
-.wtw-i-t-play:hover , .wtw-i-t-info:hover{
+.grid3__what_to_watch__slideshow__item__trailer__playbutton:hover , .grid3__what_to_watch__slideshow__item__trailer__infobutton:hover{
     background-color: rgb(44,44,44);
 }
 
-.wtw-prev ,.wtw-next{
-    cursor: pointer;
-    position: absolute;
-    color: white;
-    border-radius: 5px;
-    top: 40%;
-    width: 50px;
-    height: 65px;
-    border-style: none;
-    border: 1px solid white;
-    background-color: black;
-    opacity: 0.5;
-}
-
-.wtw-next{
-    right: 0;
-}
-
-.wtw-prev:hover i {
-    color: rgb(230, 185, 30);
-    transition: 0.15s ease-in;
-}
-
-.wtw-next:hover i {
-    color: rgb(230, 185, 30);
-    transition: 0.15s ease-in;
+.button--prev--wtw,
+.button--next--wtw{
+    top: 30%;
 }
 
 @media screen and (max-width:1024px) {
 
-    /* .whattowatch-slider-container .slide{
+    .grid3__what_to_watch__slideshow .slide{
         grid-column-start:span 4 !important;
     }
     
 
-    .wtw-slider-item{
+    .grid3__what_to_watch__slideshow__item{
         grid-column-start:span 4 !important;
-    } */
+    }
 
 }

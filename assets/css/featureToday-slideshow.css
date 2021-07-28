@@ -6,87 +6,54 @@
 
 }
 
-.feature-container{
+.Grid2__featureToday{
     width: 100%;
     position: relative;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
-.feature-today{
+.Grid2__featureToday__title{
     color: rgb(230, 185, 30);
     font-size: 33px;
     font-weight: 600;
     padding-left: 10px;
 }
 
-.feature-slideshow{
+.Grid2__featureToday__slideshow{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
-}
-
-.feature-item-container{
     margin-top: 20px;
+}
+
+.Grid2__featureToday__slideshow__item{
     width: 100%;
-
 }
 
-.prev-feature,
-.next-feature{
-    cursor: pointer;
-    position: absolute;
-    color: white;
-    border-radius: 5px;
-    top: 40%;
-    width: 50px;
-    height: 65px;
-    border-style: none;
-    border: 1px solid white;
-    background-color: black;
-    opacity: 0.5;
-}
-
-.next-feature{
-    right: 0;
-}
-
-.prev-feature:hover i {
-    color: rgb(230, 185, 30);
-    transition: 0.15s ease-in;
-}
-
-.next-feature:hover i {
-    color: rgb(230, 185, 30);
-    transition: 0.15s ease-in;
-}
-
-.feature-img{
+.Grid2__featureToday__slideshow__item__image{
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.feature-img:hover .feature-image-footer i{
+.Grid2__featureToday__slideshow__item__image:hover .Grid2__featureToday__slideshow__item__image__footer i{
     color: rgb(230, 185, 30);
 }
 
-.feature-img:hover {
+.Grid2__featureToday__slideshow__item__image:hover {
     background: radial-gradient(rgb(0, 0, 0),rgb(0, 0, 0, 0),rgb(0, 0, 0, 0));
 }
 
-/* .feature-img:hover,.feature-image-footer  */
-
-.feature-img img{
+.Grid2__featureToday__slideshow__item__image img{
     
-    width: 95%;
-    height: 100%;
-    height: 250px; 
+    width: 100%;
+    height: 270px; 
     object-fit: cover;
     position: relative;
 }
 
-.feature-image-footer{
+.Grid2__featureToday__slideshow__item__image__footer{
     display: flex;
     gap: 15px;
     position: absolute;
@@ -95,18 +62,21 @@
     color: white;
     align-items: center;
     font-size: 16px;
-
-
 }
 
-.feature-item-footer{
+.Grid2__featureToday__slideshow__item__footer{
     color: white;
     cursor: pointer;
     padding-top: 20px;
 }
 
-.feature-item-footer:hover{
+.Grid2__featureToday__slideshow__item__footer:hover{
     text-decoration: underline;
+}
+
+.button--prev--feature,
+.button--next--feature{
+    top: 40%;
 }
 
 @media screen and (max-width:1024px){

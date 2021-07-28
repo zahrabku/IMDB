@@ -1,27 +1,27 @@
-.landpage-footer{
+.landpage_footer{
     height: 30vh;
     padding: 10px 150px;
     font-family: 'Roboto', sans-serif;;
 }
 
-.social-media-icon-container{
+.landpage_footer__social_media_icon{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.social-media-icon-container i{
+.landpage_footer__social_media_icon i{
     margin: 0px 20px 30px 20px;
     cursor: pointer;
 }
 
-.social-media-icon-container button{
+.landpage_footer__social_media_icon button{
     background-color: black;
     
 }
 
-.footer-links{
+.landpage_footer__links{
     color: white;
     display: flex;
     flex-direction: column;
@@ -29,16 +29,16 @@
     align-items: center;
 }
 
-.footer-links div{
+.landpage_footer__links div{
     margin: 10px 0px;
 }
 
-.footer-links div a{
+.landpage_footer__links div a{
     margin: 0px 10px;
     cursor: pointer;
     letter-spacing: 0.5px;
 }
 
-.footer-links div a:hover{
+.landpage_footer__links div a:hover{
     text-decoration: underline;
 }
